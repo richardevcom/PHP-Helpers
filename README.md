@@ -1,5 +1,11 @@
-# PHP-Helper-functions
-
+# PHP Helper functions
+---
+## Installation
+```php
+require_once('helpers.php');
+```
+---
+## Description
 <code>call_functions</code>      - Call one or more functions with one or more arguments (for multi-array call)<br/>
 <code>is_multi_array</code>      - Check if array is multidimensional<br/>
 <code>in_multi_array</code>      - Check if value exists in multidimensional array<br/>
