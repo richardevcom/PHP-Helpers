@@ -91,8 +91,6 @@ function include_file($file, $die = false, $method = 'require_once'){
 		}
 		return true;
 	}
-	global $error;
-	$error->add(__('System Error'), __('File not found'));
 	if($die === true) die();
 	return false;
 }
@@ -148,18 +146,6 @@ function file_url_exists($url){
 	return $status;
 }
 
-// /* Check if directory has files */
-// function is_dir_empty($dir) {
-//   if (!is_readable($dir)) return NULL; 
-//   $handle = opendir($dir);
-//   while (false !== ($entry = readdir($handle))) {
-//     if ($entry != "." && $entry != "..") {
-//       return FALSE;
-//     }
-//   }
-//   return TRUE;
-// }
-
 /* Import JSON file & decode it */
 function import_json($file){
 	if(preg_match("~^(?:f|ht)tps?://~i", $file)){
@@ -177,9 +163,7 @@ function import_json($file){
 			return $json;
 		}
 	}
-
-	global $error;
-	$error->add('System Error','JSON file not found',0);
+	
 	return false;
 }
 
@@ -191,16 +175,12 @@ function export_json($file, $data){
 		return true;
 	}
 
-	global $error;
-	$error->add(__('System Error'),__('JSON file not found'),0);
 	return false;
 }
 
 /* Create file with or without data */
 function create_file($file, $data = '', $force = false){
 	if(file_exists($file) && $force == false){
-		global $error;
-		$error->add(__('System Error'),__('File overwrite turned off. Please set $force parameter to TRUE to overwrite.'));
 		return false;
 	}else{
 		$file = fopen($file,"wb");
