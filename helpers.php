@@ -1,4 +1,20 @@
 <?php
+
+/** Return system base URL */
+function get_base_url(){
+	return sprintf(
+		"%s://%s%s",
+		is_secure() ? 'https' : 'http',
+		$_SERVER['SERVER_NAME'],
+		$_SERVER['REQUEST_URI']
+	);
+}
+
+/** Check if using HTTPS protocol */
+function is_secure() {
+  return (!empty($_SERVER['HTTPS']) && filter_var($_SERVER['HTTPS'], FILTER_VALIDATE_BOOLEAN));
+}
+
 /**
  * Call one or more functions with one or more arguments
  */
