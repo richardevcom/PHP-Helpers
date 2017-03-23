@@ -11,3 +11,5 @@
 <code>export_json</code>         - Export JSON file & decode it<br/>
 <code>create_file</code>         - Create file with or without data<br/>
 <code>ordinal</code>             - Return number as ordinal<br/>
+<code>get_base_url</code>        - Return system base URL<br/>
+<code>is_secure</code>           - Check if using HTTPS protocol<br/>
