@@ -1,5 +1,10 @@
 <?php
 
+/** Return file dirname path */
+function file_dirname(){
+	return dirname(__FILE__);
+}
+
 /** Return MySQL timestamp formated date/time */
 function mysql_timestamp($time = false){
 	$time ? false : $time = time();
