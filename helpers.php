@@ -1,5 +1,12 @@
 <?php
 
+/** Return MySQL timestamp formated date/time */
+function mysql_timestamp($time = false){
+	$time ? false : $time = time();
+	return date("Y-m-d H:i:s", $time);
+}
+
+
 /** Return system base URL */
 function get_base_url(){
 	return sprintf(
