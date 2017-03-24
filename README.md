@@ -7,7 +7,7 @@ require_once('helpers.php');
 <code>call_functions</code>      - Call one or more functions with one or more arguments (for multi-array call)<br/>
 <code>create_file</code>         - Create file with or without data<br/>
 <code>export_json</code>         - Export JSON file & decode it<br/>
-<code>file_dirname</code>        - Return file dirname path: <code>dirname(__FILE__)</code><br/>
+<code>file_dirname</code>        - Return file dirname path<br/>
 <code>file_url_exists</code>     - Check if file exists in provided url<br/>
 <code>get_base_url</code>        - Return system base URL<br/>
 <code>import_json</code>         - Import JSON file & decode it<br/>
