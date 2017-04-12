@@ -17,5 +17,5 @@ require_once('helpers.php');
 <code>is_multi_array</code>      - Check if array is multidimensional<br/>
 <code>is_secure</code>           - Check if using HTTPS protocol<br/>
 <code>multi_array_search</code>  - Search for value in multi array<br/>
-<code>mysql_timestamp</code>     - Return MySQL timestamp formated date/time
+<code>mysql_timestamp</code>     - Return MySQL timestamp formated date/time<br/>
 <code>ordinal</code>             - Return number as ordinal<br/>
