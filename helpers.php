@@ -215,3 +215,9 @@ function is_dir_empty($dir) {
   if (!is_readable($dir)) return NULL; 
   return (count(scandir($dir)) == 2);
 }
+
+// Remove special characters
+function schars_replace($string, $replace){
+	$string = str_replace("'", $replace, $string);
+	return preg_replace('/[^a-zA-Z0-9\']/', $replace, $string);
+}
