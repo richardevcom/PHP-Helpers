@@ -19,3 +19,4 @@ require_once('helpers.php');
 <code>multi_array_search</code>  - Search for value in multi array<br/>
 <code>mysql_timestamp</code>     - Return MySQL timestamp formated date/time<br/>
 <code>ordinal</code>             - Return number as ordinal<br/>
+<code>schars_replace</code>      - Remove special characters<br/>
