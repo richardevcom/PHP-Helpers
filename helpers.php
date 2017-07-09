@@ -221,3 +221,12 @@ function schars_replace($string, $replace){
 	$string = str_replace("'", $replace, $string);
 	return preg_replace('/[^a-zA-Z0-9\']/', $replace, $string);
 }
+
+// Call function only once using call_user_func()
+function call_func_once($name, $params){
+    static $called = false;
+    if (!$func_called) {
+        $func_called = true;
+        call_user_func($name, $param);
+    }
+}
