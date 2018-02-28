@@ -1,4 +1,5 @@
 # PHP Helper functions
+[![Latest Stable Version](https://poser.pugx.org/richardevcom/php-helper/v/stable?format=flat-square)](https://packagist.org/packages/richardevcom/php-helper) [![License](https://poser.pugx.org/richardevcom/php-helper/license?format=flat-square)](https://packagist.org/packages/richardevcom/php-helper) 
 
 ## Install with Composer
 ```
