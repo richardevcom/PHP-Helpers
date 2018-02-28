@@ -1,8 +1,14 @@
 # PHP Helper functions
-## Installation
+
+## Install with Composer
+```
+composer require richardevcom/php-helper
+```
+## Manual install
 ```php
 require_once('helpers.php');
 ```
+
 ## Description
 
 ### Arrays
