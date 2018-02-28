@@ -14,5 +14,8 @@
             "homepage": "https://www.dewogroup.com",
             "role": "Developer"
         }
-    ]
+    ],
+    "require": {
+        "php": ">=7.0"
+    }
 }
