@@ -5,7 +5,7 @@
     "keywords": ["php helper", "php-helper", "php", "extended", "helper",
         "helpers", "function", "functions", "files", "directories","arrays",
         "JSON","MySQL","URL","HTTP","numbers","characters"],
-    "version": "1.0.0",
+    "version": "1.0.2",
     "homepage": "https://richardevcom.github.io/PHP-Helpers/",
     "license": "GPL-3.0-or-later",
     "authors": [
