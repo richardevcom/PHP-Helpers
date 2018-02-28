@@ -3,7 +3,7 @@
     "type": "library",
     "description": "PHP Helper Functions",
     "keywords": ["php helper", "php-helper", "php", "extended", "helper",
-        "helpers", "function, "functions", "files", "directories","arrays",
+        "helpers", "function", "functions", "files", "directories","arrays",
         "JSON","MySQL","URL","HTTP","numbers","characters"],
     "homepage": "https://phphelper.richardev.com",
     "license": "MIT",
