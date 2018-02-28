@@ -6,7 +6,7 @@
         "helpers", "function", "functions", "files", "directories","arrays",
         "JSON","MySQL","URL","HTTP","numbers","characters"],
     "homepage": "https://phphelper.richardev.com",
-    "license": "MIT",
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "Ricards Mucelans",
