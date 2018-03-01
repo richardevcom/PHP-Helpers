@@ -1,5 +1,7 @@
 # PHP Helper functions
-[![Latest Stable Version](https://poser.pugx.org/richardevcom/php-helper/v/stable?format=flat-square)](https://packagist.org/packages/richardevcom/php-helper) [![License](https://poser.pugx.org/richardevcom/php-helper/license?format=flat-square)](https://packagist.org/packages/richardevcom/php-helper) 
+[![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/releases/)
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/richardevcom/PHP-Helpers/releases)
+[![ForTheBadge winter-is-coming](http://ForTheBadge.com/images/badges/winter-is-coming.svg)](https://richardevcom.github.io/PHP-Helpers)
 
 ## Install with Composer
 ```
