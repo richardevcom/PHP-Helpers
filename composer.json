@@ -17,5 +17,8 @@
     ],
     "require": {
         "php": "*"
+    },
+    "autoload":{
+        "files": ["helpers.php"]
     }
 }
