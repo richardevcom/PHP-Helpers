@@ -15,6 +15,25 @@ require_once('helpers.php');
 
 ## Description
 
+### Constants
+<code>__FILEDIR__</code>          - Current file directory
+<code>__PARENTDIR__</code>        - Current file parent directory
+<code>__EXTENSION__</code>        - Current file extension
+<code>__NAME__</code>             - Current file name (without extension)
+<code>__FILENAME__</code>         - Current file name (with extension)
+```php
+echo __FILEDIR__;
+// Prints: /home/user/project
+echo __PARENTDIR__;
+// Prints: /home/user
+echo __EXTENSION__;
+// Prints: php
+echo __NAME__;
+// Prints: helpers
+echo __FILENAME__;
+// Prints: helpers.php
+```
+
 ### Arrays
 <code>in_multi_array</code>      - Check if value exists in multidimensional array<br/>
 <code>is_multi_array</code>      - Check if array is multidimensional<br/>
