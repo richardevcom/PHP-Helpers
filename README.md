@@ -12,7 +12,6 @@ composer require richardevcom/php-helper
 ```php
 require_once('helpers.php');
 ```
-
 ## Description
 
 ### Constants
@@ -20,10 +19,8 @@ require_once('helpers.php');
 <code>&#95;&#95;PARENTDIR&#95;&#95;</code>        - Current file parent directory<br/>
 <code>&#95;&#95;EXTENSION&#95;&#95;</code>        - Current file extension<br/>
 <code>&#95;&#95;NAME&#95;&#95;</code>             - Current file name (without extension)<br/>
-<code>&#95;FILENAME&#95;&#95;</code>              - Current file name (with extension)<br/>
-<code>&#95;DIRNAME&#95;&#95;</code>               - Current file directory name<br/>
-
-
+<code>&#95;&#95;FILENAME&#95;&#95;</code>              - Current file name (with extension)<br/>
+<code>&#95;&#95;DIRNAME&#95;&#95;</code>               - Current file directory name<br/>
 ```php
 echo __FILEDIR__;
 // Prints: /home/user/project
