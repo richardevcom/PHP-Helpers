@@ -16,11 +16,12 @@ require_once('helpers.php');
 ## Description
 
 ### Constants
-<code>__FILEDIR__</code>          - Current file directory
-<code>__PARENTDIR__</code>        - Current file parent directory
-<code>__EXTENSION__</code>        - Current file extension
-<code>__NAME__</code>             - Current file name (without extension)
-<code>__FILENAME__</code>         - Current file name (with extension)
+<code>&#95;&#95;FILEDIR&#95;&#95;</code>          - Current file directory<br/>
+<code>&#95;&#95;PARENTDIR&#95;&#95;</code>        - Current file parent directory<br/>
+<code>&#95;&#95;EXTENSION&#95;&#95;</code>        - Current file extension<br/>
+<code>&#95;&#95;NAME&#95;&#95;</code>             - Current file name (without extension)<br/>
+<code>&#95;FILENAME&#95;</code>         - Current file name (with extension)<br/>
+
 ```php
 echo __FILEDIR__;
 // Prints: /home/user/project
