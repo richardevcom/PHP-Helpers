@@ -13,6 +13,18 @@ function get_email_domain($email): string {
 }
 
 /**
+ * @param string $email
+ * @return bool
+ */
+function is_email($email): bool {
+    if (empty($email)) {
+        return false;
+    }
+    $email = filter_var($email, FILTER_SANITIZE_STRING);
+    return !(filter_var($email, FILTER_VALIDATE_EMAIL) === false);
+}
+
+/**
  * Check if email domain is in spam list
  * @param string $email
  * @param array $list
