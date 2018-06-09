@@ -13,7 +13,6 @@ function is_multi_array(array $arr) {
     return false;
 }
 
-
 /**
  * Check if value exists in multidimensional array
  * @param string $needle String to search for in array
