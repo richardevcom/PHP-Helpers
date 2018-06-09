@@ -10,5 +10,11 @@ composer require richardevcom/php-helper
 ```
 ## Manual install
 ```php
-require_once('helpers.php');
+// Array helper functions file
+require_once('src/Array.php');
+// File helper functions file
+require_once('src/File.php');
+// SQL helper functions file
+require_once('src/SQL.php');
+// etc...
 ```
