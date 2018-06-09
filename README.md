@@ -9,6 +9,7 @@
 composer require richardevcom/php-helper
 ```
 ## Manual install
+Just include file which functions set you want to use.
 ```php
 // Array helper functions file
 require_once('src/Array.php');
@@ -18,3 +19,5 @@ require_once('src/File.php');
 require_once('src/SQL.php');
 // etc...
 ```
+## Description
+To avoid function name conflict use <code>richardevcom\PHPHelpers</code> namespace;
