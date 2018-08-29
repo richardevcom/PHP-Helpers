@@ -67,10 +67,10 @@ function multi_array_search($needles, array $haystack){
 				if(is_array($array)){
 					if(is_multi_array($array)){
 						$prep = multi_array_search($needles, $array);
-						if($prep) $result[$key] = $prep;
+						if($prep !== false) $result[$key] = $prep;
 					}else{
 						$prep	= array_search($needle, $array);
-						if($prep) $result[$key][] = $prep;
+						if($prep !== false) $result[$key][] = $prep;
 					}
 				}
 			}
@@ -116,6 +116,15 @@ function is_array_empty($array, $key = null, $zero = true) {
 				}
 			}
 		}
+	}else{
+		if($zero){
+			foreach(array(0,'0','0.0') as $del_val){
+				if (($key = array_search($del_val, $array)) !== false) {
+				    unset($array[$key]);
+				}
+			}
+		}
+		$empty = empty($array);
 	}
 
 	return $empty;
