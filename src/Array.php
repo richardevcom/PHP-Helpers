@@ -117,7 +117,7 @@ function is_array_empty($array, $key = null, $zero = true) {
 			}
 		}
 	}else{
-		if($zero){
+		if(!$zero){
 			foreach(array(0,'0','0.0') as $del_val){
 				if (($key = array_search($del_val, $array)) !== false) {
 				    unset($array[$key]);
