@@ -95,7 +95,7 @@ function random_array($arr){
  * @param bool $zero
  * @return bool
  */
-function is_array_empty($array, $key = null, $zero = true) {
+function is_array_empty($array, $zero = true, $key = null) {
 	$empty = true;
 
 	if ($key !== null && $array !== null) {
@@ -148,46 +148,4 @@ function flatten(array $array, $preserveKeys = true): array{
         }
     });
     return $flattened;
-}
-
-/**
- * Searches for a given value in an array of arrays, objects and scalar values. You can optionally specify
- * a field of the nested arrays and objects to search in.
- *
- * @param  array $array  The array to search
- * @param  mixed $search The value to search for
- * @param  bool  $field  The field to search in, if not specified all fields will be searched
- * @return boolean|mixed  False on failure or the array key on success
- */
-function search(array $array, $search, $field = false) {
-    // *grumbles* stupid PHP type system
-    $search = (string)$search;
-    foreach ($array as $key => $elem) {
-        // *grumbles* stupid PHP type system
-        $key = (string)$key;
-        if ($field) {
-            if (is_object($elem) && $elem->{$field} === $search) {
-                return $key;
-            }
-            if (is_array($elem) && $elem[$field] === $search) {
-                return $key;
-            }
-            if (is_scalar($elem) && $elem === $search) {
-                return $key;
-            }
-        } else {
-            if (is_object($elem)) {
-                $elem = (array)$elem;
-                /** @noinspection NotOptimalIfConditionsInspection */
-                if (in_array($search, $elem, false)) {
-                    return $key;
-                }
-            } elseif (is_array($elem) && in_array($search, $elem, false)) {
-                return $key;
-            } elseif (is_scalar($elem) && $elem === $search) {
-                return $key;
-            }
-        }
-    }
-    return false;
 }
