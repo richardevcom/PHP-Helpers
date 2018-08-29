@@ -139,7 +139,7 @@ echo is_array_empty($second);  // FALSE
 echo is_array_empty($third);  // FALSE
 
 // Without zeros
-echo is_array_empty($second, true);  // TRUE
+echo is_array_empty($second, false);  // TRUE
 
 // Specific key
 $multi  = array(
