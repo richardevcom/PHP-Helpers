@@ -11,7 +11,7 @@
 
 ## Install with Composer
 ```
-composer require richardevcom/php-helper
+composer require richardevcom/php-helpers
 ```
 ## Manual install
 Just include file which functions set you want to use.
